@@ -67,3 +67,9 @@ let newMappedArray = useFilterMethodToGetEven.map(useFilterMethodToGetEven=> use
 console.log(newMappedArray)
 let sumOfArray= newMappedArray.reduce((sum,number)=>sum+number,0)         ///add all values in the array
 console.log(sumOfArray)
+
+//chaining
+console.log("--------------")
+let sumValus = (oddEvenArrray.filter(oddEvenArrray=> oddEvenArrray%2==0))
+                .map(oddEvenArrray => oddEvenArrray*3).reduce((sum, number)=> sum+number,0)
+console.log(sumValus);
